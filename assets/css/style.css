@@ -1,0 +1,31 @@
+body {
+  font-family: 'VT323', monospace;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  background-image: url("../images/starwars_stormtrooper.jpg");
+  background-image: 100%;
+}
+
+.main-section-title {
+  color: black;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: -4px 0 yellow, 0  -3px yellow, -3px 0 yellow, 0 -3px yellow;
+}
+
+/* images */
+img {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.character {
+  display: inline-block;
+  margin: 2px;
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}

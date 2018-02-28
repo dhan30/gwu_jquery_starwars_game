@@ -1,10 +1,9 @@
 body {
   font-family: 'VT323', monospace;
-  color: black;
+  color: yellow;
   font-weight: bold;
   font-size: 30px;
-  background-image: url("../images/starwars_stormtrooper.jpg");
-  background-image: 100%;
+  background-image: url("../images/starwars_stars.png");
 }
 
 .main-section-title {
@@ -23,9 +22,20 @@ img {
 
 .character {
   display: inline-block;
+  vertical-align: middle;
   margin: 2px;
   background-color: black;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+}
+
+#attack-button {
+  background: white;
+  color: black;
+}
+
+.attack-button {
+  background: white;
+  color: black;
 }

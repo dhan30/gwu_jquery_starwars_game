@@ -8,28 +8,28 @@ $(document).ready(function() {
       health: 150,
       attack: 15,
       imageUrl: "assets/images/obi_wan.jpg",
-      defense_attack: 20
+      defenseAttack: 20
     },
     "LukeSkywalker": {
       name: "LukeSkywalker",
       health: 230,
       attack: 21,
       imageUrl: "assets/images/luke.jpeg",
-      defense_attack: 26
+      defenseAttack: 26
     },
     "DarthVader": {
       name: "DarthVader",
       health: 300,
       attack: 17,
       imageUrl: "assets/images/darthVader.jpeg",
-      defense_attack: 10
+      defenseAttack: 10
     },
     "Yoda": {
       name: "Yoda",
       health: 400,
       attack: 7,
       imageUrl: "assets/images/yoda.jpeg",
-      defense_attack: 15
+      defenseAttack: 15
     }
   };
 
@@ -229,7 +229,7 @@ $("#attack-button").on("click", function() {
 
       // Creates messages for our attack and our opponents counter attack.
       var attackMessage = "You attacked " + currDefender.name + " for " + (currSelectedCharacter.attack * turnCounter) + " damage.";
-      var counterAttackMessage = currDefender.name + " attacked you back for " + currDefender.enemyAttackBack + " damage.";
+      var counterAttackMessage = currDefender.name + " attacked you back for " + currDefender.defenseAttack + " damage.";
       renderMessage("clearMessage");
 
       // Reduce defender's health by your attack value.
@@ -246,7 +246,7 @@ $("#attack-button").on("click", function() {
         renderMessage(counterAttackMessage);
 
         // Reduce your health by the opponent's attack value.
-        currSelectedCharacter.health -= currDefender.enemyAttackBack;
+        currSelectedCharacter.health -= currDefender.defenseAttack;
 
         // Render the player's updated character card.
         renderCharacters(currSelectedCharacter, "enemyDamage");
